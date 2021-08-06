@@ -751,7 +751,7 @@ Citizen.CreateThread(function()
                                     CheckPlayers(curVeh)
                                     Wait(500)
                                     if DoesEntityExist(curVeh) then
-                                        QBCore.Functions.Notify("The wasn't deleted, please check if is someone inside the car.", "error", 4500)
+                                        QBCore.Functions.Notify("The vehicle wasn't deleted, please check if is someone inside the car.", "error", 4500)
                                     else
                                     TriggerServerEvent('qb-garage:server:updateVehicleStatus', totalFuel, engineDamage, bodyDamage, plate, Name)
                                     TriggerServerEvent('qb-garage:server:updateVehicleState', 1, plate, Name)
@@ -815,7 +815,7 @@ Citizen.CreateThread(function()
                                         local totalFuel = exports['LegacyFuel']:GetFuel(curVeh)
                                             CheckPlayers(curVeh)
                                         if DoesEntityExist(curVeh) then
-                                                QBCore.Functions.Notify("The Vehicle wasn't deleted, please check if is someone inside the car.", "error", 4500)
+                                                QBCore.Functions.Notify("The vehicle wasn't deleted, please check if is someone inside the car.", "error", 4500)
                                         else
                                         TriggerServerEvent('qb-garage:server:updateVehicleStatus', totalFuel, engineDamage, bodyDamage, plate, currentHouseGarage)
                                         TriggerServerEvent('qb-garage:server:updateVehicleState', 1, plate, currentHouseGarage)
